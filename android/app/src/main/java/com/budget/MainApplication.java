@@ -3,6 +3,9 @@ package com.budget;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+import io.invertase.firebase.ReactNativeFirebaseAppPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
