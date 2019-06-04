@@ -5,13 +5,13 @@ import firebase from '@react-native-firebase/app'
 
 export default class Login extends React.Component {
   state = { email: '', password: '', errorMessage: null }
+
   handleLogin = () => {
-    const { email, password } = this.setState
     firebase
     .auth()
-    .signInWithEmailAndPassword(email, password)
+    .signInWithEmailAndPassword(this.state.email, this.state.password)
     .then(() => this.props.navigation.navigate('Main'))
-    .catch(error => this.setState({ errorMaessage: error.message }))
+    .catch(error => this.setState({ errorMessage: error.message }))
 
     console.log('handleLogin')
   }
