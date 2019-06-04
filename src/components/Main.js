@@ -21,13 +21,14 @@ export default class Main extends React.Component {
 
   render() {
     const { currentUser } = this.state
-
+    const {navigate} = this.props.navigation;
     return (
           <View style={styles.container}>
             <Text>
               Hi {currentUser && currentUser.email}!
             </Text>
             <Button title="Sign Out" onPress={this.handleSignOut} />
+            <Button title="Starling" onPress={() => this.props.navigation.navigate('Starling')} />
           </View>
 
         )

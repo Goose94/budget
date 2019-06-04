@@ -12,10 +12,11 @@ import Loading from './src/components/Loading';
 import SignUp from './src/components/SignUp';
 import Login from './src/components/Login';
 import Main from './src/components/Main';
+import Starling from './src/components/Starling';
 
 // type Props = {};
 
-const AppStack = createStackNavigator({Main:Main})
+const AppStack = createStackNavigator({Main:Main, Starling: Starling})
 const AuthStack = createStackNavigator({SignUp: SignUp, Login: Login})
 
 const AppNavigator = createSwitchNavigator(
