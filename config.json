@@ -1,6 +1,7 @@
 {
   "clientId": "hTpepdpp1JzdzE2fitrz",
   "clientSecret": "8m17K7MGc4KuTc4qXr1719BWtX3cgbUnfhehpyzo",
+  "redirectURI": "http://localhost:3000/truelayer-redirect",
   "oauthLoginCallbackUri": "",
   "appServerBase": "",
   "appServerTokenRequestPath": "",
